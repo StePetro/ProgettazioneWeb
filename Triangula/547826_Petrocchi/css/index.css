@@ -1,0 +1,41 @@
+/*stile degli h centrali*/
+section h1{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+section h3{
+	margin-top: 0;
+}
+
+/*stile sezione centrale*/
+section{
+	text-align: center;
+	margin:0 auto;
+	width: 50%;
+}
+
+/*stile triangolo centrale*/
+.triangolo{
+	width: 40%;
+	height: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+	section h1{
+	font-size: 4em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	section h1{
+	font-size: 2em;
+	}
+}
+
+.push2
+{
+	height: 10vh;
+}
+
+/*Made by: Stefano Petrocchi*/

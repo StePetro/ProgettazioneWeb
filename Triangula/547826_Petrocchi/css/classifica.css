@@ -1,0 +1,102 @@
+/* Parte centrale */
+.centrale h2{
+	font-size: 3em;
+	margin-bottom: 0.5em;
+	padding-top: 0.5em;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.centrale{
+	background-color: rgba(160,76,74,0.50);
+	margin:0 auto;
+	width: 50%;
+	text-align: center;
+	border-radius: 10%;
+	padding-bottom: 1.5em;
+}
+
+.button{
+	margin: 10px;
+	width: 30%;
+	font-size: 2em;
+}
+
+.schiacciato{
+	height: 10px;
+	text-align: center;
+	padding: 10px;
+	line-height: 8px;
+	width: 50px;
+}
+
+/*Per mettere la scrollbar alla classifica*/
+#scroll{
+	overflow-x:auto;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/*stile tabella*/
+#classifica {
+	width: 100%;
+	position: relative;
+	border-collapse: collapse;
+	margin-bottom: 0px;
+	border-spacing: 0px;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+#classifica td, #classifica th {
+	padding: 15px;
+}
+
+#classifica td:first-child{ 
+	border-right: 5px solid rgba(103, 51, 100, 1);
+	font-size: 1.5em;
+}
+
+#classifica tr{ 
+	border: 5px solid rgba(103, 51, 100, 1);
+	background-color: rgba(160, 76, 74, 0.2);
+}
+
+#classifica td{
+	padding-top: 1%; 
+	padding-bottom: 1%;
+}
+
+#classifica tr:nth-child(even){
+	background-color: rgba(103, 51, 100, 0.2); 
+}
+
+#classifica tr:hover {
+	background-color: rgba(160, 76, 74, 0.5);
+}
+
+#classifica tr:nth-child(even):hover {
+	background-color: rgba(103, 51, 100, 0.5);
+}
+
+.evidenziato {
+	background-color: rgba(160, 76, 74, 0.5);
+}
+
+.evidenziato:nth-child(even) {
+	background-color: rgba(103, 51, 100, 0.5);
+}
+
+
+#classifica th {
+	font-size: 1.5em;
+	border: 5px solid rgba(103, 51, 100, 1); 
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background-color: rgba(160, 76, 74, 1);
+	color: white;
+}
+
+/*Made by: Stefano Petrocchi*/

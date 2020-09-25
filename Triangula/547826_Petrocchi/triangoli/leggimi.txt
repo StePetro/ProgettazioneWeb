@@ -1,0 +1,2 @@
+I triangoli devono essere nel seguente formato: triangolo + Tipoligia + .png
+In modo che vengano caricate le immagini dall'apposito script

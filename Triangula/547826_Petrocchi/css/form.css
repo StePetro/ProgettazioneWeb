@@ -1,0 +1,128 @@
+/*Parte Centrale*/
+.centrale h2{
+	font-family: Triangolarh;
+	font-size: 3em;
+	margin-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.centrale{
+	background-color: rgba(160,76,74,0.50);
+	position: relative;
+	margin:0 auto;
+	width: 40%;
+	text-align: center;
+	border-radius: 50px;
+	padding-bottom: 1.5em;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+section p{
+	font-size: 1.5em;
+}
+
+/*Stile del Form*/
+form{
+	font-size: 1.3em;
+	cursor: default;
+}
+
+input{
+	color: rgba(103,51,100,1.00);
+	transition: all 0.7s ease-in-out;
+	text-align: center;
+	height: 1.2em;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 0.7em;
+}
+
+input[type=text] {
+	border: 2px solid rgba(160,76,74,1.00);
+	border-radius: 4px;
+	width: 40%;
+	cursor: text;
+}
+
+input[type=text]:focus {
+	width: 50%;
+	height: 1.4em;
+	font-size: 1em;
+	border: 2px solid rgba(103,51,100,1.00);
+	outline: none;
+}
+
+input[type=password] {
+	border: 2px solid rgba(160,76,74,1.00);
+	border-radius: 4px;
+	width: 40%;
+	cursor: text;
+}
+
+input[type=password]:focus {
+	width: 50%;
+	height: 1.4em;
+	font-size: 1em;
+	border: 2px solid rgba(103,51,100,1.00);
+	outline: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width: 1.5em;
+	cursor: pointer;
+}
+
+form{
+	text-align: center;
+}
+
+.error{
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: rgba(103,51,100,1.00);
+	font-size:0.7em;
+	padding: 0px;
+	margin: 0px;
+}
+
+.button{
+	transform: translateY(20px);
+}
+
+.button:active{
+	transform: translateY(24px);
+}
+
+.button{
+	margin: 10px;
+	width: 40%;
+	height: 7%;
+	text-align: center;
+	font-family: Triangolarp; 
+	padding: 10px;
+}
+
+.registrati{
+	font-size: 1em;
+	text-decoration: underline;
+	transition: all 0.5s ease-in-out;
+	color: rgba(255,255,255,1.00);
+	transform: translateX(-2px);
+}
+
+.registrati:hover{
+	color: rgba(103,51,100,1.00);
+	cursor: pointer;
+}
+
+/*Tiene il form sopra le montagne*/
+.push2 
+{
+	height: 4vh;
+}
+
+/*Made by: Stefano Petrocchi*/

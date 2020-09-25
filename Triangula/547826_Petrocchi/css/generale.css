@@ -1,0 +1,246 @@
+/* Stile Scrollbar: dà un warning perchè non è standardizzato, non è abilitato su firefox*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(160, 76, 74, 0.5); 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: rgba(103, 51, 100, 0.5); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(103, 51, 100, 1); 
+}
+
+/*Icona della Musica*/
+#iconaMusica{
+	opacity: 0.5;
+}
+
+#iconaMusica:hover{
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s linear;
+}
+
+/*Icona Play-Pausa*/
+#playPausa{
+	opacity: 0.5;
+	margin-left: 1em;
+}
+
+#playPausa:hover{
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s linear;
+}
+
+/*stile del body*/
+html, body{
+	height: 100%;
+}
+
+body{
+	color: rgba(255,255,255,1.00);
+	text-transform: uppercase;
+	font-family: triangolarP;
+	margin: 0;
+	background-image: url(../immagini/sfondo.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto;
+	background-color:rgba(124,161,154,1.00);
+}
+
+/*font importati*/
+@font-face
+{
+	font-family: TriangolarH;
+	src: url(../font/Arccos.ttf);
+}
+@font-face
+{
+	font-family: TriangolarP;
+	src: url(../font/angerpoise_lampshade.ttf);
+}
+
+/*stile testo*/
+section h1{
+	font-family: triangolarH;
+	font-size: 6em;
+}
+
+ h2{
+	font-family: triangolarH;
+	font-size: 2.9em;
+	 cursor: default;
+}
+
+h1{
+	cursor: default;
+}
+
+h3{
+	cursor: default;
+}
+
+p {
+	cursor: default;
+}
+
+a{
+	text-decoration: none;	
+}
+
+
+/*Stile barra di navigazione superiore*/
+nav {
+	overflow: hidden;
+	background-color: rgba(150, 73, 81, 0.5);
+	font-size: 1em;
+}
+
+nav .utente{
+	float: right;
+	padding: 20px 32.359px;
+	border-right: 5px solid rgba(103, 51, 100, 0.5);
+}
+
+nav .utente:hover{
+	float: right;
+	padding: 20px 32.359px;
+	border-right: 5px solid rgba(103, 51, 100, 1);
+	border-left: 5px solid rgba(103, 51, 100, 1);
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav h2{
+	float: right;
+	display: block;
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+	padding: 4.4px 16px;
+	margin: auto;
+	text-decoration: none;
+	background-color: rgba(160, 76, 74, 1);
+	transition: 5s 0.3s;
+}
+
+nav h2:hover { /*animazione del logo in alto a destra*/
+	color: rgba(255,255,255,0.00);
+	background-image: url(../immagini/Triangoli_strani.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+}
+
+nav a{
+	float: left;
+	display: block;
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	padding: 20px 32.359px; /*sezione aurea: 1,6180339887...*/
+	transition: color 1s;
+	background-color: rgba(160, 76, 74, 0.5);
+	border-left: 5px solid rgba(103, 51, 100, 0.5);
+}
+
+/*Animazione bottoni barra*/
+nav a:hover
+{
+	background-color: rgba(160, 76, 74, 1);
+	border-left: 5px solid rgba(103, 51, 100, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+/*Le pagine html hanno il tag active nella loro sezione*/
+nav .active
+{
+	background-color: rgba(160, 76, 74, 1);
+	border-left: 5px solid rgba(103, 51, 100, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+nav .utente.active {
+	float: right;
+	padding: 20px 32.359px;
+	border-right: 5px solid rgba(103, 51, 100, 1);
+	border-left: 5px solid rgba(103, 51, 100, 1);
+}
+/*Stile della sezione centrale*/
+.contenuto
+{
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -50px;
+	max-width: 100%;
+	padding: 10px;
+	background-image: url(../immagini/montagne_centrate.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: auto;
+	background-color: transparent; 
+}
+
+
+/*stile bottoni*/
+ .button{
+	font-size: 2em;
+	display: inline-block;
+	padding: 20px 32.359px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: rgba(255, 255, 255, 0.5);
+	border: none;
+	border-radius: 15px;
+	background-color: rgba(160, 76, 74, 0.5);
+	box-shadow: 0px 4px 15px 1px rgba(103, 51, 100, 0.5);
+	transition: color 1s;
+}
+
+.button:hover
+{
+	background-color: rgba(160, 76, 74, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+.button:active
+{
+	/*box-shadow: 0px 0px 15px rgba(103, 51, 100, 1);*/
+	transform: translateY(4px);
+}
+
+/*Footer*/
+/*serve per spingere le cose*/
+.push 
+{
+	height: 200px;
+	clear: both;
+}
+
+.push2
+{
+	clear: both;
+}
+
+footer
+{
+	color: rgba(160,76,74,1.00);
+	text-align: center;
+	background-color: #F1F1F1;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+
+
+/*Made by: Stefano Petrocchi*/

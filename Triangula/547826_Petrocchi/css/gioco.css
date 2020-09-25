@@ -1,0 +1,228 @@
+/*Stile degli oggetti nel playground*/
+#playground {
+	position: absolute;
+	top: 7em;
+	left: 50%;
+	transform: translatex(-570px);
+	cursor: none;
+	background-color: rgba(160,76,74,0.50);
+	width: 1080px;
+	height: 720px;
+	border:10px rgba(103,51,100,1.00) solid;
+	border-bottom-color: rgba(241,241,241,1.00);
+	transition: border 1s;
+	clear: both;
+}
+
+.push 
+{
+	height: 720px;
+	clear: both;
+}
+
+#paddle{
+	width: 150px;
+	height: 25px;
+	position: absolute;
+	top: 694px;
+	left:460px;
+	margin: 0px;
+	display: inline-block;
+	cursor: none;
+	border: none;
+	border-radius: 15px;
+	background-color: rgba(160, 76, 74, 1);
+	box-shadow: 0px 4px 15px 1px rgba(103, 51, 100, 0.5);
+	transition: color 1s;
+	transition: width 1s;
+}
+
+.ball{
+	width: 20px;
+	height: 20px;
+	margin:0px;
+	position: absolute;
+	display: inline-block;
+	cursor: none;
+	border: none;
+	border-radius: 100px;
+	background-color:rgba(160,76,74,1.00);
+	box-shadow: 0px 4px 15px 1px rgba(103, 51, 100, 0.5);
+	transition: color 1s;
+	transition: width 1s;
+	transition: height 1s;
+}
+
+.hide{ /*Non viene usato ma serve per nascondere gli oggetti*/
+	top: -20px;
+	left:-20px;
+	display: none;
+}
+
+.triangolo{
+	width: 60px;
+	height: 60px;
+	margin:0px;
+	padding: 0px;
+	position: absolute;
+	top: 50%;
+	left:500px;
+	display: inline-block;
+	cursor: none;
+	border: none;
+	border: 0px;
+	/*transition: all 2s ease-out ;*/
+}
+
+.pillola{
+	margin:0px;
+	position: absolute;
+	display: inline-block;
+	cursor: none;
+	border: none;
+}
+ 
+ /*Stile dei div che appiono sopra al playground*/
+.ombraSovrapposta{ 
+	cursor:auto;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	width: 1130px;
+	height: 770px;
+	text-align: center;
+	top: 6.2em;
+	left: 50%;
+	transform: translatex(-585px);
+	z-index: -1;
+	box-shadow: 0px 4px 200px 100px rgba(0, 0, 0, 0);
+	color: rgba(255,255,255,0.00);
+	transition: all 3s linear 6s;
+	/*display: none*/
+}
+
+/*Sezione della pausa*/
+#pausa, #start{
+	transition: all 1s linear;
+}
+
+#pausa h2{
+	position:relative;
+	top: 25%;
+	left: -1%;
+	transition: 4s;
+	margin: 0;
+	font-size: 5em;
+}
+
+/*Sezione Vittoria*/
+.pausa.button{
+	position:relative;
+	top: 30%;
+	left: -1%;
+	/*transition: all 3s linear 6s;*/
+	margin: 0;
+	display: none;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 1%;
+	background-color: rgba(160, 76, 74, 1);
+	/*color: rgba(255, 255, 255, 0);
+	background-color: rgba(160, 76, 74, 0);
+	box-shadow: 0px 4px 15px 1px rgba(103, 51, 100,0);
+	z-index: -2;*/
+	
+}
+
+/*Sezione Sconfitta*/
+#sconfitta h2{
+	position:relative;
+	top: 25%;
+	left: -1%;
+	transition: 4s;
+	margin: 0;
+	font-size: 5em;
+}
+
+.sconfitta.button{
+	position:relative;
+	top: 30%;
+	left: -1%;
+	/*transition: all 3s linear 6s;*/
+	margin: 0;
+	display: none;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 1%;
+	background-color: rgba(160, 76, 74, 1);
+	/*color: rgba(255, 255, 255, 0);
+	background-color: rgba(160, 76, 74, 0);
+	box-shadow: 0px 4px 15px 1px rgba(103, 51, 100,0);
+	z-index: -2;*/
+	
+}
+
+/*Sezione Vittoria*/
+.vittoria.button{
+	position:relative;
+	top: 30%;
+	left: -1%;
+	/*transition: all 3s linear 6s;*/
+	margin: 0;
+	display: none;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 1%;
+	background-color: rgba(160, 76, 74, 1);
+	/*color: rgba(255, 255, 255, 0);
+	background-color: rgba(160, 76, 74, 0);
+	box-shadow: 0px 4px 15px 1px rgba(103, 51, 100,0);
+	z-index: -2;*/
+	
+}
+
+
+#vittoria h2{
+	position:relative;
+	top: 25%;
+	left: -1%;
+	transition: 4s;
+	margin: 0;
+	font-size: 5em;
+}
+
+/*Sezione Start*/
+#start h2{
+	position:relative;
+	top: 30%;
+	left: -1%;
+	margin: 0;
+	font-size: 6em;
+}
+
+#start h3{
+	position:relative;
+	top: 20%;
+	left: -1.8%;
+	font-size: 4.4em;
+}
+
+#start p{
+	position:relative;
+	top: 10%;
+	left: -1.6%;
+}
+
+/*Statistiche laterali*/
+.punteggio{
+	font-size: 1.3em;
+}
+
+p span{
+	 font-style: normal;
+}
+
+aside{
+	max-width: 10%;
+}
+
+/*Made by: Stefano Petrocchi*/

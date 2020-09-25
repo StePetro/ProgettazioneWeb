@@ -1,0 +1,62 @@
+/*Come triangoli fluttuanti normali ma partono dal basso verso l'alto, più aggiustamenti per adattarli meglio alla pagina*/
+.formeSfondo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120%;
+  margin-bottom: -20%;
+}
+
+.formeSfondo li{
+  top: 120%;
+}
+
+@-webkit-keyframes formaFluttuante
+{
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1800px) rotate(500deg);
+    transform: translateY(-1800px) rotate(500deg);
+  }
+}
+
+@keyframes formaFluttuante
+{
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1800px) rotate(500deg);
+    transform: translateY(-1800px) rotate(500deg);
+  }
+}
+
+@-webkit-keyframes formaFluttuanteInverso
+{
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1800px) rotate(-500deg);
+    transform: translateY(-1800px) rotate(-500deg);
+  }
+}
+
+@keyframes formaFluttuanteInverso
+{
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1800px) rotate(-500deg);
+    transform: translateY(-1800px) rotate(-500deg);
+  }
+}
+
+/*Made by: Stefano Petrocchi*/

@@ -1,0 +1,2 @@
+Le pillole devono essere nel seguente formato: pillola + Tipoligia + .png
+In modo che vengano caricate le immagini dall'apposito script
